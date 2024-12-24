@@ -1,0 +1,196 @@
+@charset "UTF-8";
+.Header {
+    width: 100%;
+    height: 70px;
+    display: grid;
+}
+@media screen and (max-width: 1080px) {
+    .Header {
+        background-color: fff;
+        z-index: 10;
+    }
+}
+@media screen and (max-width: 767px) {
+    .Header  {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+.Header--common {
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 1080px) {
+    .Header--common {
+        position: fixed !important;
+    }
+}
+
+.HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+@media screen and (max-width: 767px) {
+    .HeaderContainer  {
+        max-width: 100%;
+        margin: 0 16px;
+    }
+}
+.HeaderContainer>*:last-child {
+    display: inline-flex;
+}
+*, *::before, *::after {
+    word-break: break-all;
+    box-sizing: border-box;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.HeaderLogo {
+    align-self: center;
+}
+img.lazy {
+    min-height: 1px;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.HeaderLogo__image {
+    width: auto;
+    height: 20px;
+}
+@media screen and (max-width: 767px) {
+    .HeaderLogo__image--pc {
+    display: none !important;
+}
+
+header {
+    unicode-bidi: isolate;
+}
+
+nav {
+    unicode-bidi: isolate;;
+}
+@media screen and (max-width: 1080px) {
+    .HeaderNavHamburger {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        width: 24px;
+        height: 17px;
+        margin: auto;
+        z-index: 100;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .HeaderNavHamburger__line:first-child {
+        top: 0;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .HeaderNavHamburger__line {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #A2A2A4;
+        transform: translate(0, -50%);
+        border-radius: 10px;
+        transition: top 0.2s, transform 0.2s, opacity 0.3s;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .HeaderNavHamburger__line:last-child {
+        top: 16px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .HeaderNavList {
+        top: 70px;
+    } 
+}
+@media screen and (max-width: 1080px) {
+    .HeaderNavList {
+        position: fixed;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        padding-top:
+        padding-bottom: 75px;
+        transition: transform 0.5s;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+@media screen and (max-width: 1080px) {
+    .HeaderNavListItem {
+        margin-right: 0;
+    }
+}
+
+.HeaderNavListItem__link {
+    font-size: 16px;
+    
+}
+
+.HeaderNavListItem {
+    text-align: center;
+    margin: 0 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #A2A2A4;
+} 
+ul, ol {
+    list-style: none;
+}
+ol, ul {
+    box-sizing: border-box;
+}
+ul  {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+@media screen and (max-width: 1080px) {
+    .HeaderNavListItem__button {
+        width: 250%;
+        height: 60px;
+        font-size: 16px;
+        margin: 0 auto;   
+    }
+}
+.HeaderNavListItem__button {
+    display: flex;
+    border-radius: 30px;
+    background-color: #F79214;
+    align-items: center;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    flex-direction: column;
+    font-weight: 700;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 20px;
+}
+body {
+    color: #333;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+}
